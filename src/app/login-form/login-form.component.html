@@ -1,0 +1,15 @@
+<mat-dialog-content>
+  <div [ngClass] ="{'shake': shakeIt, 'dialog-class': true}">
+    <p>
+      <mat-form-field>
+        <input matInput placeholder="Username">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field>
+        <input matInput placeholder="Password" type="password">
+      </mat-form-field>
+    </p>
+    <button mat-button class="button-class" (click)="login()">Login</button>
+  </div>
+</mat-dialog-content>
